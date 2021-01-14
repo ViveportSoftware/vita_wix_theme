@@ -1,5 +1,7 @@
 # HTC Vita Themes for WiX Toolset (Htc.Vita.Wix.Themes)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/5d07ssbu2uacr19a/branch/master?svg=true)](https://ci.appveyor.com/project/kenelin/vita-wix-themes/branch/master)
+
 ## Dependency
 
 Compile-time dependencies: none
