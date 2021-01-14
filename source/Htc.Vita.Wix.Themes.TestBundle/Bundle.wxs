@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix
+    xmlns="http://schemas.microsoft.com/wix/2006/wi"
+    xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle
+      Name="Htc.Vita.Wix.Themes.TestBundle"
+      Manufacturer="HTC Corp."
+      UpgradeCode="b83713f6-4fa7-4fba-9671-b8b2629b804e"
+      Version="!(bind.packageVersion.Htc.Vita.Wix.Themes.TestPackage.x86)">
+    <BootstrapperApplicationRef
+        Id="WixStandardBootstrapperApplication.HyperlinkLargeLicense">
+      <bal:WixStandardBootstrapperApplication
+          LicenseUrl="https://github.com/ViveportSoftware/vita_wix_extension/blob/master/LICENSE.md"
+          ShowVersion="yes"
+          LocalizationFile="../Htc.Vita.Wix.Themes/Resources/wix3/HyperlinkTheme.wxl"
+          LogoFile="../Htc.Vita.Wix.Themes/Resources/wix3/logo.png"
+          ThemeFile="../Htc.Vita.Wix.Themes/Resources/wix3/HyperlinkLargeTheme.xml"
+      />
+    </BootstrapperApplicationRef>
+    <Variable
+        Name="InstallFolder"
+        Type="string"
+        Value="[ProgramFiles6432Folder]Htc.Vita.Wix.Themes.TestBundle"
+    />
+    <Chain>
+      <MsiPackage
+          Id="Htc.Vita.Wix.Themes.TestPackage.x64"
+          InstallCondition="VersionNT64"
+          SourceFile="$(var.Htc.Vita.Wix.Themes.TestPackage.x64.TargetPath)">
+        <MsiProperty
+            Name="INSTALLFOLDER"
+            Value="[InstallFolder]"
+        />
+      </MsiPackage>
+      <MsiPackage
+          Id="Htc.Vita.Wix.Themes.TestPackage.x86"
+          InstallCondition="NOT VersionNT64"
+          SourceFile="$(var.Htc.Vita.Wix.Themes.TestPackage.x86.TargetPath)">
+        <MsiProperty
+            Name="INSTALLFOLDER"
+            Value="[InstallFolder]"
+        />
+      </MsiPackage>
+    </Chain>
+  </Bundle>
+</Wix>

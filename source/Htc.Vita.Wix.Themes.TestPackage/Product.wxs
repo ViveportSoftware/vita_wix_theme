@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?if $(var.Platform) = x86 ?>
+<?define PlatformProductName = "Htc.Vita.Wix.Themes.Test (32bit)"?>
+<?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+<?else?>
+<?define PlatformProductName = "Htc.Vita.Wix.Themes.Test (64bit)"?>
+<?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+<?endif?>
+<Wix
+    xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product
+      Id="*"
+      Name="$(var.PlatformProductName)"
+      Language="1033"
+      Version="!(bind.FileVersion.DummyApp.exe)"
+      Manufacturer="Viveport Software"
+      UpgradeCode="3b6505fb-8447-4eae-93d4-2ef4e8be6137">
+    <Package
+        InstallerVersion="200"
+        Compressed="yes"
+        InstallScope="perMachine"
+    />
+    <MajorUpgrade
+        AllowSameVersionUpgrades="yes"
+        DowngradeErrorMessage="A newer version of [ProductName] is already installed."
+    />
+    <MediaTemplate EmbedCab="yes" />
+    <Feature
+        Id="ProductFeature"
+        Title="Htc.Vita.Wix.Themes.Test"
+        Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="$(var.PlatformProgramFilesFolder)">
+        <Directory Id="INSTALLFOLDER" Name="Htc.Vita.Wix.Themes.Test" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup
+        Id="ProductComponents"
+        Directory="INSTALLFOLDER">
+      <Component Id="ProductComponents_DummyApp.exe">
+        <File
+            Id="DummyApp.exe"
+            KeyPath="yes"
+            Source="$(var.Htc.Vita.Wix.Themes.TargetDir)Htc.Vita.Wix.Themes.exe">
+        </File>
+      </Component>
+      <Component Id="ProductComponents_DummyData.txt">
+        <File
+            Id="DummyData.txt"
+            KeyPath="yes"
+            Source="DummyData.txt">
+        </File>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Htc.Vita.Wix.Themes", "Htc.Vita.Wix.Themes\Htc.Vita.Wix.Themes.csproj", "{4444E097-F52D-47C2-9186-1B812FD42142}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Htc.Vita.Wix.Themes.TestPackage.x86", "Htc.Vita.Wix.Themes.TestPackage\Htc.Vita.Wix.Themes.TestPackage.x86.wixproj", "{C8C394B4-E519-4FD2-A53D-655126C5D5C7}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Htc.Vita.Wix.Themes.TestPackage.x64", "Htc.Vita.Wix.Themes.TestPackage\Htc.Vita.Wix.Themes.TestPackage.x64.wixproj", "{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Htc.Vita.Wix.Themes.TestBundle", "Htc.Vita.Wix.Themes.TestBundle\Htc.Vita.Wix.Themes.TestBundle.wixproj", "{B83713F6-4FA7-4FBA-9671-B8B2629B804E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|x64.Build.0 = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Debug|x86.Build.0 = Debug|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|x64.ActiveCfg = Release|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|x64.Build.0 = Release|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|x86.ActiveCfg = Release|Any CPU
+		{4444E097-F52D-47C2-9186-1B812FD42142}.Release|x86.Build.0 = Release|Any CPU
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Debug|x64.ActiveCfg = Debug|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Debug|x86.ActiveCfg = Debug|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Debug|x86.Build.0 = Debug|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Release|Any CPU.ActiveCfg = Release|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Release|x64.ActiveCfg = Release|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Release|x86.ActiveCfg = Release|x86
+		{C8C394B4-E519-4FD2-A53D-655126C5D5C7}.Release|x86.Build.0 = Release|x86
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Debug|x64.ActiveCfg = Debug|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Debug|x64.Build.0 = Debug|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Debug|x86.ActiveCfg = Debug|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Release|Any CPU.ActiveCfg = Release|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Release|x64.ActiveCfg = Release|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Release|x64.Build.0 = Release|x64
+		{8238A204-0A4A-472B-AFD7-C22F84DFE6AD}.Release|x86.ActiveCfg = Release|x64
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Debug|x64.ActiveCfg = Debug|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Debug|x86.ActiveCfg = Debug|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Debug|x86.Build.0 = Debug|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Release|Any CPU.ActiveCfg = Release|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Release|x64.ActiveCfg = Release|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Release|x86.ActiveCfg = Release|x86
+		{B83713F6-4FA7-4FBA-9671-B8B2629B804E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96CDA82-CB47-4B91-9097-8F39AE576919}
+	EndGlobalSection
+EndGlobal
