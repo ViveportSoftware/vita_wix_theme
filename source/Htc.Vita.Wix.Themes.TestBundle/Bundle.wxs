@@ -10,11 +10,23 @@
     <BootstrapperApplicationRef
         Id="WixStandardBootstrapperApplication.HyperlinkLargeLicense">
       <bal:WixStandardBootstrapperApplication
-          LicenseUrl="https://github.com/ViveportSoftware/vita_wix_extension/blob/master/LICENSE.md"
+          LicenseUrl="https://github.com/ViveportSoftware/vita_wix_themes/blob/master/LICENSE.md"
           ShowVersion="yes"
           LocalizationFile="../Htc.Vita.Wix.Themes/Resources/wix3/HyperlinkTheme.wxl"
           LogoFile="../Htc.Vita.Wix.Themes/Resources/wix3/logo.png"
           ThemeFile="../Htc.Vita.Wix.Themes/Resources/wix3/HyperlinkLargeTheme.xml"
+      />
+      <Payload
+          Id="theme_zh_CN_string"
+          Compressed="yes"
+          Name="2052\thm.wxl"
+          SourceFile="../Htc.Vita.Wix.Themes/Resources/wix3/2052/HyperlinkTheme.wxl"
+      />
+      <Payload
+          Id="theme_zh_TW_string"
+          Compressed="yes"
+          Name="1028\thm.wxl"
+          SourceFile="../Htc.Vita.Wix.Themes/Resources/wix3/1028/HyperlinkTheme.wxl"
       />
     </BootstrapperApplicationRef>
     <Variable
