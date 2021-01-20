@@ -51,6 +51,9 @@
     <Content Include="Resources\wix3\1028\HyperlinkTheme.wxl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\wix3\2052\HyperlinkTheme.wxl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\wix3\HyperlinkTheme.wxl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
